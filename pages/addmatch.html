@@ -1,248 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- === css link === -->
-    <link rel="stylesheet" href="/css/addmatch.css">
+    <link rel="stylesheet" href="/css/addmatch.css" />
     <!-- === fontawesome kit link === -->
-    <script src="https://kit.fontawesome.com/aab4d24b6f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/aab4d24b6f.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Scorpion-Dashboard</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="sidebar">
-        <div class="logo_content">
-            <div class="logo">
-                <img src="/img/brand-logo.png" alt="Scorpion-Gamer">
-                <div class="logo_name">Scorpion</div>
-            </div>
-            <span id="btn"><i class="fa-solid fa-bars"></i></span>
+      <div class="logo_content">
+        <div class="logo">
+          <img src="/img/brand-logo.png" alt="Scorpion-Gamer" />
+          <div class="logo_name">Scorpion</div>
         </div>
-        <ul class="nav_list">
-            <li>
-                <a href="/index.html">
-                    <i class="fa-solid fa-border-all"></i>
-                    <span class="links_name">Dashboard</span>
-                </a>
-                <span class="tooltip">Dashboard</span>
-            </li>
-            <li>
-                <a href="/pages//Category.html">
-                    <i class="fa-solid fa-table-list"></i>
-                    <span class="links_name">Category</span>
-                </a>
-                <span class="tooltip">Category</span>
-            </li>
-            <li>
-                <a href="addmatch.html">
-                    <i class="fa-solid fa-gamepad"></i>
-                    <span class="links_name">Add Match</span>
-                </a>
-                <span class="tooltip">Add Match</span>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fa-solid fa-gamepad"></i>
-                    <span class="links_name">All Matches</span>
-                </a>
-                <span class="tooltip">All Matches</span>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fa-solid fa-money-bill-transfer"></i>
-                    <span class="links_name">Deposit</span>
-                </a>
-                <span class="tooltip">Deposit</span>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fa-solid fa-money-bill-transfer"></i>
-                    <span class="links_name">Withdraw Request</span>
-                </a>
-                <span class="tooltip">Withdraw Request</span>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fa-solid fa-info"></i>
-                    <span class="links_name">Room Details</span>
-                </a>
-                <span class="tooltip">Room Details</span>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fa-solid fa-users"></i>
-                    <span class="links_name">Users</span>
-                </a>
-                <span class="tooltip">Users</span>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fa-solid fa-gear"></i>
-                    <span class="links_name">Settings</span>
-                </a>
-                <span class="tooltip">Settings</span>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fa-solid fa-money-bill"></i>
-                    <span class="links_name">Payment Method</span>
-                </a>
-                <span class="tooltip">Payment Method</span>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fa-solid fa-money-bill"></i>
-                    <span class="links_name">Promo Offer</span>
-                </a>
-                <span class="tooltip">Promo Offer</span>
-            </li>
-        </ul>
-        <div class="profile_contnet">
-            <div class="profile">
-                <div class="profile_details">
-                    <img src="/img/profile-img.jpg" alt="">
-                    <div class="name_job">
-                        <div class="name">Subas Hebrom</div>
-                        <div class="job">Admin Modarator</div>
-                    </div>
-                </div>
-                <i id="log_out" class="fa-solid fa-arrow-right-from-bracket"></i>
+        <span id="btn"><i class="fa-solid fa-bars"></i></span>
+      </div>
+      <ul class="nav_list">
+        <li>
+          <a href="/index.html">
+            <i class="fa-solid fa-border-all"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+          <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+          <a href="/pages//Category.html">
+            <i class="fa-solid fa-table-list"></i>
+            <span class="links_name">Category</span>
+          </a>
+          <span class="tooltip">Category</span>
+        </li>
+        <li>
+          <a href="addmatch.html">
+            <i class="fa-solid fa-gamepad"></i>
+            <span class="links_name">Add Match</span>
+          </a>
+          <span class="tooltip">Add Match</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-gamepad"></i>
+            <span class="links_name">All Matches</span>
+          </a>
+          <span class="tooltip">All Matches</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-money-bill-transfer"></i>
+            <span class="links_name">Deposit</span>
+          </a>
+          <span class="tooltip">Deposit</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-money-bill-transfer"></i>
+            <span class="links_name">Withdraw Request</span>
+          </a>
+          <span class="tooltip">Withdraw Request</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-info"></i>
+            <span class="links_name">Room Details</span>
+          </a>
+          <span class="tooltip">Room Details</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-users"></i>
+            <span class="links_name">Users</span>
+          </a>
+          <span class="tooltip">Users</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-gear"></i>
+            <span class="links_name">Settings</span>
+          </a>
+          <span class="tooltip">Settings</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-money-bill"></i>
+            <span class="links_name">Payment Method</span>
+          </a>
+          <span class="tooltip">Payment Method</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-money-bill"></i>
+            <span class="links_name">Promo Offer</span>
+          </a>
+          <span class="tooltip">Promo Offer</span>
+        </li>
+      </ul>
+      <div class="profile_contnet">
+        <div class="profile">
+          <div class="profile_details">
+            <img src="/img/profile-img.jpg" alt="" />
+            <div class="name_job">
+              <div class="name">Subas Hebrom</div>
+              <div class="job">Admin Modarator</div>
             </div>
+          </div>
+          <i id="log_out" class="fa-solid fa-arrow-right-from-bracket"></i>
         </div>
+      </div>
     </div>
 
     <div class="category_content">
-        <div class="top-item">
-            <h1>Scorpion User Dashboard</h1>
+      <div class="top-item">
+        <h1>Scorpion User Dashboard</h1>
+      </div>
+      <!-- === Select Item Section === -->
+      <div class="select-item-section">
+        <div class="middle-top-item">
+          <div class="addm-con">
+            <h2>Select Main Category</h2>
+            <select name="main-category" id="main-category" required>
+              <option value="" disabled selected>Select Main Category</option>
+              <option value="1">Todays Match</option>
+              <option value="2">Special Match</option>
+              <option value="3">Add1</option>
+              <option value="4">Add2</option>
+            </select>
+          </div>
+          <div class="addm-con">
+            <h2>Select Sub Category</h2>
+            <select name="main-category" id="main-category" required>
+              <option value="" disabled selected>Select Main Category</option>
+              <option value="1">BR Match</option>
+              <option value="2">CS Match</option>
+              <option value="3">CS 1v1 2v2 Match</option>
+              <option value="4">Custom Match</option>
+              <option value="4">Free Match</option>
+              <option value="5">Special Match</option>
+              <option value="6">Lone Wolf</option>
+            </select>
+          </div>
         </div>
-        <!-- === Select Item Section === -->
-        <div class="select-item-section">
-            <div class="middle-top-item">
-                <div class="addm-con">
-                    <h2>Select Main Category</h2>
-                    <select name="main-category" id="main-category" required>
-                        <option value="" disabled selected>Select Main Category</option>
-                        <option value="1">Todays Match</option>
-                        <option value="2">Special Match</option>
-                        <option value="3">Add1</option>
-                        <option value="4">Add2</option>
-                    </select>
-                </div>
-                <div class="addm-con">
-                    <h2>Select Sub Category</h2>
-                    <select name="main-category" id="main-category" required>
-                        <option value="" disabled selected>Select Main Category</option>
-                        <option value="1">BR Match</option>
-                        <option value="2">CS Match</option>
-                        <option value="3">CS 1v1 2v2 Match</option>
-                        <option value="4">Custom Match</option>
-                        <option value="4">Free Match</option>
-                        <option value="5">Special Match</option>
-                        <option value="6">Lone Wolf</option>
-                    </select>
-                </div>
-            </div>
-            <!-- === Match Name Create === -->
-            <div class="match-name-inpt">
-                <h2>Create Match Name</h2>
-                <input type="text" placeholder="Create Match Name" required>
-            </div>
-            <!-- === Game Detials Section === -->
-            <div class="game-detials-section">
-                <h2>Game Details</h2>
-                <!-- === Game Details Container === -->
-                <div class="game-details-container">
-                    <div class="gd-box">
-                        <label for="">Max Player</label>
-                        <input type="number" placeholder="Max Player" required>
-                    </div>
-                    <div class="gd-box">
-                        <label for="">Map Name</label>
-                        <input type="text" placeholder="Map Name" required>
-                    </div>
-                    <div class="gd-box">
-                        <label for="">Version</label>
-                        <select name="" id="">
-                            <option value="" disabled selected>Version</option>
-                            <option value="">Mobile</option>
-                            <option value="">PC</option>
-                        </select>
-                    </div>
-                    <div class="gd-box">
-                        <label for="">Game Type</label>
-                        <select name="" id="">
-                            <option value="" disabled selected>Game Type</option>
-                            <option value="">Solo</option>
-                            <option value="">Duo</option>
-                            <option value="">Squad</option>
-                        </select>
-                    </div>
-                    <div class="gd-box">
-                        <label for="">Game Mood</label>
-                        <select name="" id="" required>
-                            <option value="" disabled selected>Game Mood</option>
-                            <option value="1">Regular</option>
-                            <option value="1">TTP</option>
-                        </select>
-                    </div>
-                    <div class="gd-box">
-                        <label for="">Time</label>
-                        <input type="time" placeholder="Max Player" required>
-                    </div>
-                    <div class="gd-box">
-                        <label for="">Date</label>
-                        <input type="date" placeholder="Max Player" required>
-                    </div>
-                </div>
-            </div>
-            <!-- === Game Detials Section === -->
-            <div class="game-detials-section">
-                <h2>Winner Prize</h2>
-                <!-- === Game Details Container === -->
-                <div class="winner-details-container">
-                    <div class="gd-box">
-                        <label for="">Win Prize</label>
-                        <input type="text" placeholder="Win Prize" required>
-                    </div>
-                    <div class="gd-box">
-                        <label for="">Per Kill Prize</label>
-                        <input type="text" placeholder="Per Kill Prize" required>
-                    </div>
-                    <div class="gd-box">
-                        <label for="">Match Entry Fee</label>
-                        <input type="text" placeholder="Match Entry Fee" required>
-                    </div>
-                    <div class="gd-box">
-                        <label for="">Second Prize</label>
-                        <input type="text" placeholder="Second Prize" required>
-                    </div>
-                    <div class="gd-box">
-                        <label for="">Third Prize</label>
-                        <input type="text" placeholder="Third Prize" required>
-                    </div>
-                    <div class="gd-box">
-                        <label for="">Fourth Prize</label>
-                        <input type="text" placeholder="Fourth Prize" required>
-                    </div>
-                    <div class="gd-box">
-                        <label for="">Fifth Prize</label>
-                        <input type="text" placeholder="Fifth Prize" required>
-                    </div>
-                    <div class="gd-box">
-                        <label for="">Total Prize</label>
-                        <input type="text" placeholder="Total Prize" required>
-                    </div>
-                </div>
-                <div class="submit-btn">
-                    <input type="submit" value="Submit Match">
-                </div>
-            </div>
+        <!-- === Match Name Create === -->
+        <div class="match-name-inpt">
+          <h2>Create Match Name</h2>
+          <input type="text" placeholder="Create Match Name" required />
         </div>
+        <!-- === Game Detials Section === -->
+        <div class="game-detials-section">
+          <h2>Game Details</h2>
+          <!-- === Game Details Container === -->
+          <div class="game-details-container">
+            <div class="gd-box">
+              <label for="">Max Player</label>
+              <input type="number" placeholder="Max Player" required />
+            </div>
+            <div class="gd-box">
+              <label for="">Map Name</label>
+              <input type="text" placeholder="Map Name" required />
+            </div>
+            <div class="gd-box">
+              <label for="">Version</label>
+              <select name="" id="">
+                <option value="" disabled selected>Version</option>
+                <option value="">Mobile</option>
+                <option value="">PC</option>
+              </select>
+            </div>
+            <div class="gd-box">
+              <label for="">Game Type</label>
+              <select name="" id="">
+                <option value="" disabled selected>Game Type</option>
+                <option value="">Solo</option>
+                <option value="">Duo</option>
+                <option value="">Squad</option>
+              </select>
+            </div>
+            <div class="gd-box">
+              <label for="">Game Mood</label>
+              <select name="" id="" required>
+                <option value="" disabled selected>Game Mood</option>
+                <option value="1">Regular</option>
+                <option value="1">TTP</option>
+              </select>
+            </div>
+            <div class="gd-box">
+              <label for="">Time</label>
+              <input type="time" placeholder="Max Player" required />
+            </div>
+            <div class="gd-box">
+              <label for="">Date</label>
+              <input type="date" placeholder="Max Player" required />
+            </div>
+          </div>
+        </div>
+        <!-- === Game Detials Section === -->
+        <div class="game-detials-section">
+          <h2>Winner Prize</h2>
+          <!-- === Game Details Container === -->
+          <div class="winner-details-container">
+            <div class="gd-box">
+              <label for="">Win Prize</label>
+              <input type="text" placeholder="Win Prize" required />
+            </div>
+            <div class="gd-box">
+              <label for="">Per Kill Prize</label>
+              <input type="text" placeholder="Per Kill Prize" required />
+            </div>
+            <div class="gd-box">
+              <label for="">Match Entry Fee</label>
+              <input type="text" placeholder="Match Entry Fee" required />
+            </div>
+            <div class="gd-box">
+              <label for="">Second Prize</label>
+              <input type="text" placeholder="Second Prize" required />
+            </div>
+            <div class="gd-box">
+              <label for="">Third Prize</label>
+              <input type="text" placeholder="Third Prize" required />
+            </div>
+            <div class="gd-box">
+              <label for="">Fourth Prize</label>
+              <input type="text" placeholder="Fourth Prize" required />
+            </div>
+            <div class="gd-box">
+              <label for="">Fifth Prize</label>
+              <input type="text" placeholder="Fifth Prize" required />
+            </div>
+            <div class="gd-box">
+              <label for="">Total Prize</label>
+              <input type="text" placeholder="Total Prize" required />
+            </div>
+          </div>
+          <div class="add-more">
+            <i id="wp-box" class="fa-solid fa-circle-plus"></i>
+          </div>
+          <div class="submit-btn">
+            <input type="submit" value="Submit Match" />
+          </div>
+        </div>
+        <!-- === Main Category === -->
+        <div class="mc-accourdion-section">
+          <p class="main-cate-btn-style cate_selected">Today's Match</p>
+          <p class="main-cate-btn-style">Special Match</p>
+          <p class="main-cate-btn-style">Add1</p>
+          <p class="main-cate-btn-style">Add2</p>
+        </div>
+        <!-- === Match Details List === -->
+        <div class="match-dl-section">
+          <h2>Match Details List</h2>
+          <div class="match-dl-con">
+            <div class="match-dl">
+              <p>Image</p>
+              <p>Match Name</p>
+              <p>Sub Category</p>
+              <p>Max Players</p>
+              <p>Map</p>
+              <p>Version</p>
+              <p>Time</p>
+              <p>Date</p>
+              <p>Total Prize</p>
+              <p>Action</p>
+            </div>
+            <div class="bdr"></div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- === js link === -->
     <script src="/js/index.js"></script>
-</body>
-
+  </body>
 </html>
