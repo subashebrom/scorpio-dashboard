@@ -11,9 +11,10 @@
   --mainbg: #1c243a;
   --border-clr: #3c4459;
   --inputbg: #2b3550;
-  --second-bg: #242E49;
+  --second-bg: #242e49;
   --btn-bg: #000000;
-  --btn2bg: #BF4B4B;
+  --btn2bg: #bf4b4b;
+  --deepgreen: #346C43;
 }
 ul {
   list-style-type: none;
@@ -227,74 +228,29 @@ body {
   font-size: 22px;
   color: #fff;
 }
-/* === Middle Items Section === */
-.middle_items_section {
+.select-item-section {
   margin: 20px 20px;
 }
-/* === Middle Item1 === */
-.middle_item1 {
-  width: 100%;
-}
-.middle_item1 .middle_itemLeft {
-  width: 50%;
+.middle-top-item {
   display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.middle_item1 .middle_itemLeft input {
-  height: 35px;
-  width: 100%;
-  padding: 0 10px;
-  border-radius: 6px;
-  border: none;
-  outline: none;
-  color: #fff;
-  font-size: 16px;
-  background-color: var(--inputbg);
-  border: 1px solid var(--border-clr);
-}
-.middle_item1 h2 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-.middle_itemRight {
-  width: 30%;
-  cursor: pointer;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-}
-.middle_itemRight input {
-  cursor: pointer;
-}
-/* === Middle Items section 2 === */
-.middle_item-sec2 {
-  margin-top: 20px;
-  width: 100%;
-}
-.middle_item-sec2 .middle_item2 {
-  display: flex;
-  align-items: end;
-  justify-content: end;
   gap: 20px;
-  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
-.middle_item-sec2 .middle_item2 .main-cate {
+.select-item-section .middle-top-item .addm-con {
+  width: 100%;
   line-height: 40px;
-  width: 100%;
 }
-.middle_item-sec2 .middle_item2 .main-cate h2 {
-  color: #fff;
+.select-item-section .middle-top-item .addm-con h2 {
   font-size: 20px;
   font-weight: 500;
+  color: #fff;
 }
-
-.middle_item-sec2 .middle_item2 .main-cate select {
-  height: 35px;
+.select-item-section .middle-top-item .addm-con select {
+  height: 40px;
   width: 100%;
-  padding: 0 10px;
+  padding: 0px 10px;
+  appearance: none;
   border-radius: 6px;
   border: none;
   outline: none;
@@ -303,14 +259,17 @@ body {
   background-color: var(--inputbg);
   border: 1px solid var(--border-clr);
 }
-.middle_item-sec2 .middle_item2 .sub-category {
+/* === Match Name Create === */
+.match-name-inpt {
+  margin-top: 20px;
   line-height: 40px;
   width: 100%;
 }
-.middle_item-sec2 .middle_item2 .sub-category input {
-  height: 35px;
+.match-name-inpt input {
+  height: 40px;
   width: 100%;
-  padding: 0 10px;
+  padding: 0px 10px;
+  appearance: none;
   border-radius: 6px;
   border: none;
   outline: none;
@@ -319,164 +278,105 @@ body {
   background-color: var(--inputbg);
   border: 1px solid var(--border-clr);
 }
-.middle_item-sec2 .middle_item2 .sub-category h2 {
-  color: #fff;
+.match-name-inpt h2 {
   font-size: 20px;
-  font-weight: 500;
+  color: #fff;
 }
-.middle_item-sec2 .middle_item2 .sub_img {
-  line-height: 40px;
-  width: 40%;
-}
-.middle_item-sec2 .middle_item2 .sub_img input {
-  height: 35px;
+/* === Game Detials Section === */
+.game-detials-section {
   width: 100%;
-  padding: 0 10px;
-  border-radius: 6px;
-  border: none;
-  outline: none;
-  color: #fff;
-  font-size: 16px;
-  background-color: none;
-  background-color: var(--inputbg);
-  border: 1px solid var(--border-clr);
+  margin-top: 20px;
 }
-.middle_item-sec2 .middle_item2 .sub_img h2 {
-  color: #fff;
+.game-detials-section h2 {
   font-size: 20px;
-  font-weight: 500;
-}
-.middle_item-sec2 .middle_item2 .submit-btn {
-  line-height: 40px;
-  width: 30%;
-}
-.middle_item-sec2 .middle_item2 .submit-btn input {
-  height: 35px;
-  width: 100%;
-  padding: 0 10px;
-  border-radius: 6px;
-  border: none;
-  outline: none;
   color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: none;
-  background-color: var(--inputbg);
-  border: 1px solid var(--border-clr);
 }
-/* ==================== */
-.main_cate-btn_con {
+/* === Game Details Container === */
+.game-details-container {
+  width: 100%;
+  height: 110px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
-  height: 70px;
-  border-block-end: 1px solid var(--border-clr);
-  border-block-start: 1px solid var(--border-clr);
-  margin-top: 20px;
-  padding: 0px 10px;
-}
-.main_cate-btn_con .main-cate-btn-style {
-  font-size: 20px;
-  color: #fff;
-  width: 100%;
-  height: 50px;
-  display: flex;
-  border-radius: 10px;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-}
-.main_cate-btn_con .main-cate-btn-style:hover {
-  background-color: var(--inputbg);
-}
-.cate_selected {
-  background-color: var(--inputbg);
-}
-/* === Sub Cate Details ===*/
-.sub_cate_details_section {
-  margin-top: 20px;
-}
-.bdr{
-  width: 100%;
-  height: 100%;
-  border: 1px solid var(--border-clr);
-}
-.sub_cate_details_section h2 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 500;
-}
-.sub-cate-details-con{
-  background-color: var(--second-bg);
-  border-radius: 5px;
-}
-.sub_cate_details{
-  display: flex;
-  padding: 10px;
+  gap: 10px;
   margin-top: 10px;
-  align-items: center;
-  width: 100%;
-  gap: 20px;
-  font-size: 18px;
-  color: #fff;
+  border-top: 1px solid var(--border-clr);
+  border-bottom: 1px solid var(--border-clr);
 }
-.sub_cate_details .sub-img-con{
-  width: 10%;
-  object-fit: cover;
-}
-.sub_cate_details .sub-c-con{
-  width: 20%;
-}
-.sub_cate_details .sub-d-con{
-  width: 20%;
-}
-.sub_cate_details .sub-a-con{
-  width: 30%;
-}
-.sub_cate_details .sub-img{
-  width: 10%;
-  object-fit: cover;
-}
-.sub_cate_details .sub-img img{
-  object-fit: cover;
-  width: 80%;
-  height: 60px;
-  border-radius: 5px;
-  border: 3px solid var(--border-clr);
-}
-.sub_cate_details .sub-cn{
-  width: 20%;
-  font-size: 16px;
-}
-.sub_cate_details .sub-d{
-  width: 20%;
-  font-size: 16px;
-}
-.sub_cate_details .sub-action-container{
+.game-details-container .gd-box {
   display: flex;
   gap: 10px;
-  width: 30%;
+  width: 100%;
+  flex-direction: column;
+}
+.game-details-container .gd-box label {
   font-size: 16px;
+  color: #fff;
 }
-.sub-action-container .edit-box{
-  background-color: var(--btn-bg);
+.game-details-container .gd-box input {
+  width: 100%;
+  outline: none;
   height: 40px;
-  padding: 0px 30px;
-  display: flex;
-  align-items: center;
+  padding-left: 5px;
   border-radius: 5px;
-  cursor: pointer;
-  border: 2px solid var(--border-clr);
+  color: #fff;
+  background-color: var(--inputbg);
+  border: 1px solid var(--border-clr);
 }
-.sub-action-container .delete-box{
+.game-details-container .gd-box select {
+  width: 100%;
+  color: #fff;
+  outline: none;
   height: 40px;
-  padding: 0px 30px;
-  display: flex;
-  align-items: center;
+  padding-left: 5px;
   border-radius: 5px;
-  cursor: pointer;
-  background-color: var(--btn2bg);
-  border: 2px solid var(--border-clr);
+  appearance: none;
+  background-color: var(--inputbg);
+  border: 1px solid var(--border-clr);
+}
+/* === Winner Details Container === */
+.winner-details-container {
+  width: 100%;
+  /* height: 110px; */
+  padding: 20px 0;
+  display: grid;
+  column-gap: 10px;
+  row-gap: 30px;
+  margin-top: 10px;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--border-clr);
+  /* border-bottom: 1px solid var(--border-clr); */
+}
+.winner-details-container .gd-box {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  flex-direction: column;
+}
+.winner-details-container .gd-box label {
+  font-size: 16px;
+  color: #fff;
+}
+.winner-details-container .gd-box input {
+  width: 100%;
+  outline: none;
+  height: 40px;
+  padding-left: 5px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: var(--inputbg);
+  border: 1px solid var(--border-clr);
+}
+.submit-btn input{
+  width: 100%;
+  outline: none;
+  height: 50px;
+  font-weight: 600;
+  padding-left: 5px;
+  border-radius: 5px;
+  font-size: 24px;
+  color: #fff;
+  background-color: var(--deepgreen);
+  border: 1px solid var(--border-clr);
 }
