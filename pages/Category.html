@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- === css link === -->
+    <link rel="stylesheet" href="/css/category.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- === fontawesome kit link === -->
+    <script
+      src="https://kit.fontawesome.com/aab4d24b6f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Scorpion-Dashboard</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo_content">
+        <div class="logo">
+          <img src="img/brand-logo.png" alt="Scorpion-Gamer" />
+          <div class="logo_name">Scorpion</div>
+        </div>
+        <span id="btn"><i class="fa-solid fa-bars"></i></span>
+      </div>
+      <ul class="nav_list">
+        <li>
+          <a href="/index.html">
+            <i class="fa-solid fa-border-all"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+          <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+          <a href="Category.html">
+            <i class="fa-solid fa-table-list"></i>
+            <span class="links_name">Category</span>
+          </a>
+          <span class="tooltip">Category</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-gamepad"></i>
+            <span class="links_name">Add Match</span>
+          </a>
+          <span class="tooltip">Add Match</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-gamepad"></i>
+            <span class="links_name">All Matches</span>
+          </a>
+          <span class="tooltip">All Matches</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-money-bill-transfer"></i>
+            <span class="links_name">Deposit</span>
+          </a>
+          <span class="tooltip">Deposit</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-money-bill-transfer"></i>
+            <span class="links_name">Withdraw Request</span>
+          </a>
+          <span class="tooltip">Withdraw Request</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-info"></i>
+            <span class="links_name">Room Details</span>
+          </a>
+          <span class="tooltip">Room Details</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-users"></i>
+            <span class="links_name">Users</span>
+          </a>
+          <span class="tooltip">Users</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-gear"></i>
+            <span class="links_name">Settings</span>
+          </a>
+          <span class="tooltip">Settings</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-money-bill"></i>
+            <span class="links_name">Payment Method</span>
+          </a>
+          <span class="tooltip">Payment Method</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-money-bill"></i>
+            <span class="links_name">Promo Offer</span>
+          </a>
+          <span class="tooltip">Promo Offer</span>
+        </li>
+      </ul>
+      <div class="profile_contnet">
+        <div class="profile">
+          <div class="profile_details">
+            <img src="/img/profile-img.jpg" alt="" />
+            <div class="name_job">
+              <div class="name">Subas Hebrom</div>
+              <div class="job">Admin Modarator</div>
+            </div>
+          </div>
+          <i id="log_out" class="fa-solid fa-arrow-right-from-bracket"></i>
+        </div>
+      </div>
+    </div>
+    <!-- === Category Content === -->
+    <div class="category_content">
+      <div class="top-item">
+        <h1>Scorpion User Dashboard</h1>
+      </div>
+      <!-- === Middle Items Section === -->
+      <div class="middle_items_section">
+        <div class="middle_item1">
+          <h2>Create Main Category</h2>
+          <div class="middle_itemLeft">
+            <input
+              type="text"
+              placeholder="Select or Create Main Category"
+              required
+            />
+            <div class="middle_itemRight">
+              <input type="submit" value="Submit Category" class="btn" />
+            </div>
+          </div>
+        </div>
+        <!-- === Middle Items section 2 === -->
+        <div class="middle_item-sec2">
+          <div class="middle_item2">
+            <div class="main-cate">
+              <h2>Selcet Main Category</h2>
+              <select name="main-category" id="main-category" required>
+                <option value="" disabled selected>Select Main Category</option>
+                <option value="1">Todays Match</option>
+                <option value="2">Special Match</option>
+                <option value="3">Add1</option>
+                <option value="4">Add2</option>
+              </select>
+            </div>
+            <div class="sub-category">
+              <h2>Create Main Category</h2>
+              <input type="text" placeholder="Create Sub Category" required />
+            </div>
+            <div class="sub_img">
+                <!-- <h2>Upload Image</h2> -->
+                <input class="up" type="file" required />
+            </div>
+            <div class="submit-btn">
+              <input type="submit" value="Submit Category" class="btn" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
