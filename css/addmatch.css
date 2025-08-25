@@ -16,7 +16,7 @@
   --btn2bg: #bf4b4b;
   --deepgreen: #346c43;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 ul {
@@ -386,7 +386,7 @@ body {
   justify-content: center;
   background-color: yellow;
 }
-.add-more i{
+.add-more i {
   color: var(--mainbg);
 }
 .submit-btn input {
@@ -433,33 +433,156 @@ body {
   background-color: var(--inputbg);
 }
 /* === Match Details List === */
-.match-dl-section{
+.match-dl-section {
   margin-top: 20px;
-  margin-bottom: 100px;
 }
-.match-dl-section h2{
+.match-dl-section h2 {
   color: #fff;
   font-size: 20px;
   font-weight: 500;
 }
-.match-dl-con{
+.match-dl-con {
   margin-top: 10px;
   border-radius: 10px;
-  background-color: #242E49;
+  background-color: #242e49;
 }
-.bdr{
+.bdr {
   width: 100%;
   height: 100%;
   border: 1px solid var(--border-clr);
 }
-.match-dl-section .match-dl-con .match-dl{
+.match-dl-section .match-dl-con .match-dl {
   display: flex;
   height: 40px;
   padding: 0px 10px;
   align-items: center;
-  justify-content: space-between;
+  gap: 10px;
+  /* justify-content: space-between; */
 }
-.match-dl-con .match-dl p{
+.match-dl-con .match-dl p {
   font-size: 16px;
   color: #fff;
+}
+.match-dl {
+}
+.match-dli {
+  width: 5%;
+  object-fit: cover;
+}
+.match-dlmn {
+  object-fit: cover;
+  width: 20%;
+}
+.match-dlsc {
+  width: 10%;
+}
+.match-dlmp {
+  width: 8%;
+}
+.match-dlm {
+  width: 8%;
+}
+.match-dlv {
+  width: 5%;
+}
+.match-dlt {
+  width: 5%;
+}
+.match-dld {
+  width: 7%;
+}
+.match-dltp {
+  width: 5%;
+}
+.match-dl-btm {
+  display: flex;
+  height: 80px;
+  color: #fff;
+  font-size: 16px;
+  padding: 0px 10px;
+  align-items: center;
+  gap: 10px;
+  /* justify-content: space-between; */
+}
+.match-dli img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.match-dla-action-btn {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+}
+.match-dla-action-btn .edit-box{
+  background-color: var(--btn-bg);
+  height: 40px;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid var(--border-clr);
+}
+.match-dla-action-btn .delete-box{
+  height: 40px;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--btn2bg);
+  border: 2px solid var(--border-clr);
+}
+/* === Page Navigation === */
+.page-navigation-section{
+  height: 80px;
+  display: flex;
+  margin-top: 20px;
+  padding: 0px 10px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--second-bg);
+}
+.pag-nav-left-item{
+  font-size: 16px;
+  color: #fff;
+}
+/* === Page nav right item === */
+.page-navigation-section .pag-nav-right-item{
+  display: flex;
+  gap: 5px;
+  color: #fff;
+  align-items: center;
+}
+.pag-nav-right-item .page-nav-box{
+  height: 40px;
+  display: flex;
+  cursor: pointer;
+  padding: 0 10px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--border-clr);
+  transition: all 0.3s ease-in-out;
+}
+.pag-nav-right-item .page-nav-box:hover{
+  background-color: var(--deepgreen);
+}
+.page-nav-box-count{
+  height: 40px;
+  width: 40px;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.page-nav-box-count:hover{
+  background-color: var(--deepgreen);
+}
+.page-nav-active{
+  background-color: var(--deepgreen);
 }
