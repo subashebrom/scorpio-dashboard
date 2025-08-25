@@ -11,9 +11,10 @@
   --mainbg: #1c243a;
   --border-clr: #3c4459;
   --inputbg: #2b3550;
-  --second-bg: #242E49;
+  --second-bg: #242e49;
   --btn-bg: #000000;
-  --btn2bg: #BF4B4B;
+  --btn2bg: #bf4b4b;
+  --deepgreen: #346c43;
 }
 ul {
   list-style-type: none;
@@ -232,251 +233,264 @@ body {
   margin: 20px 20px;
 }
 /* === Middle Item1 === */
-.middle_item1 {
-  width: 100%;
-}
-.middle_item1 .middle_itemLeft {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.middle_item1 .middle_itemLeft input {
-  height: 35px;
-  width: 100%;
-  padding: 0 10px;
-  border-radius: 6px;
-  border: none;
-  outline: none;
-  color: #fff;
-  font-size: 16px;
-  background-color: var(--inputbg);
-  border: 1px solid var(--border-clr);
-}
-.middle_item1 h2 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-.middle_itemRight {
-  width: 30%;
-  cursor: pointer;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-}
-.middle_itemRight input {
-  cursor: pointer;
-}
-/* === Middle Items section 2 === */
-.middle_item-sec2 {
-  margin-top: 20px;
-  width: 100%;
-}
-.middle_item-sec2 .middle_item2 {
-  display: flex;
-  align-items: end;
-  justify-content: end;
-  gap: 20px;
-  width: 100%;
-}
-.middle_item-sec2 .middle_item2 .main-cate {
-  line-height: 40px;
-  width: 100%;
-}
-.middle_item-sec2 .middle_item2 .main-cate h2 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 500;
-}
 
-.middle_item-sec2 .middle_item2 .main-cate select {
-  height: 35px;
-  width: 100%;
-  padding: 0 10px;
-  border-radius: 6px;
-  border: none;
-  outline: none;
-  color: #fff;
-  font-size: 16px;
-  background-color: var(--inputbg);
-  border: 1px solid var(--border-clr);
+/* === Solo Winner Section === */
+.winner-section {
+  margin: 20px 20px;
 }
-.middle_item-sec2 .middle_item2 .sub-category {
-  line-height: 40px;
-  width: 100%;
-}
-.middle_item-sec2 .middle_item2 .sub-category input {
-  height: 35px;
-  width: 100%;
-  padding: 0 10px;
-  border-radius: 6px;
-  border: none;
-  outline: none;
-  color: #fff;
-  font-size: 16px;
-  background-color: var(--inputbg);
-  border: 1px solid var(--border-clr);
-}
-.middle_item-sec2 .middle_item2 .sub-category h2 {
-  color: #fff;
+.winner-section h2 {
   font-size: 20px;
+  color: #fff;
+}
+.winner-section .winner-container {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.winner-section .winner-container .winner-box {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: start;
+}
+.winner-section .winner-container .winner-box label {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.winner-section .winner-container .winner-box input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  font-size: 15px;
+  padding: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--inputbg);
+  border: 2px solid var(--border-clr);
+}
+.solo-player-con {
+  width: 100%;
+  gap: 5px;
+  display: none;
+  max-height: 400px;
+  min-height: 70px;
+  overflow-y: scroll;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  flex-direction: column;
+  background-color: var(--second-bg);
+}
+.solo-player-con .solo-pn {
+  display: flex;
+  width: 100%;
+  padding: 14px 10px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: start;
+  background-color: var(--inputbg);
+}
+.solo-player-con .solo-pn-result {
+  gap: 5px;
+  display: none;
+  margin-top: 2px;
+}
+.solo-player-con > .solo-pn-result > input {
+  color: #fff;
+  border: 1px solid #fff !important;
+  background-color: transparent !important;
+}
+/* === Solo Full Results === */
+.solo-full-result-sec {
+  margin: 20px 20px;
+}
+.solo-full-result-sec .match-name h2 {
+  font-size: 20px;
+  color: #fff;
   font-weight: 500;
 }
-.middle_item-sec2 .middle_item2 .sub_img {
-  line-height: 40px;
-  width: 40%;
-}
-.middle_item-sec2 .middle_item2 .sub_img input {
-  height: 35px;
+.solo-full-result-sec .match-name-details {
+  height: 50px;
   width: 100%;
-  padding: 0 10px;
-  border-radius: 6px;
-  border: none;
-  outline: none;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
   color: #fff;
-  font-size: 16px;
-  background-color: none;
-  background-color: var(--inputbg);
-  border: 1px solid var(--border-clr);
+  gap: 20px;
+  /* justify-content: space-between; */
+  border-bottom: 1px solid var(--border-clr);
 }
-.middle_item-sec2 .middle_item2 .sub_img h2 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 500;
-}
-.middle_item-sec2 .middle_item2 .submit-btn {
-  line-height: 40px;
+.match-name-details .id {
   width: 30%;
 }
-.middle_item-sec2 .middle_item2 .submit-btn input {
-  height: 35px;
+match-name-details,
+.kill,
+.mp,
+.ep,
+.tp {
   width: 100%;
-  padding: 0 10px;
-  border-radius: 6px;
-  border: none;
-  outline: none;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: none;
-  background-color: var(--inputbg);
-  border: 1px solid var(--border-clr);
 }
-/* ==================== */
-.main_cate-btn_con {
+.solo-full-res-con {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  padding: 20px 20px;
   gap: 20px;
-  height: 70px;
-  border-block-end: 1px solid var(--border-clr);
-  border-block-start: 1px solid var(--border-clr);
-  margin-top: 20px;
-  padding: 0px 10px;
+  background-color: var(--second-bg);
 }
-.main_cate-btn_con .main-cate-btn-style {
-  font-size: 20px;
+.solo-full-res-con .idNo {
+  width: 6%;
   color: #fff;
+}
+.result-box {
   width: 100%;
-  height: 50px;
+}
+.sfrpname {
+  height: 40px;
   display: flex;
-  border-radius: 10px;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-}
-.main_cate-btn_con .main-cate-btn-style:hover {
-  background-color: var(--inputbg);
-}
-.cate_selected {
-  background-color: var(--inputbg);
-}
-/* === Sub Cate Details ===*/
-.sub_cate_details_section {
-  margin-top: 20px;
-}
-.bdr{
-  width: 100%;
-  height: 100%;
-  border: 1px solid var(--border-clr);
-}
-.sub_cate_details_section h2 {
   color: #fff;
+  padding: 0px 5px;
+  align-items: center;
+  border-radius: 5px 5px 0px 0px;
+  justify-content: space-between;
+  background-color: var(--inputbg);
+}
+.player-profile {
+  cursor: pointer;
+  font-size: 30px;
+}
+.single-result-con {
+  width: 100%;
+  display: flex;
+}
+.single-result-con input {
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  outline: none;
+  padding: 0px 5px;
+  border: 1px solid #aab2b794;
+  background-color: transparent;
+}
+
+/* === Duo Winner Result === */
+.duo-winer-result-section {
+  margin: 20px 20px;
+}
+.duo-winer-result-section h2 {
   font-size: 20px;
+  color: #fff;
   font-weight: 500;
 }
-.sub-cate-details-con{
-  background-color: var(--second-bg);
-  border-radius: 5px;
-}
-.sub_cate_details{
+.duo-winner-selection {
   display: flex;
-  padding: 10px;
   margin-top: 10px;
-  align-items: center;
-  width: 100%;
-  gap: 20px;
-  font-size: 18px;
+  line-height: 40px;
+  flex-direction: column;
+}
+.duo-winner-selection label {
+  font-size: 16px;
   color: #fff;
 }
-.sub_cate_details .sub-img-con{
-  width: 10%;
-  object-fit: cover;
-}
-.sub_cate_details .sub-c-con{
-  width: 20%;
-}
-.sub_cate_details .sub-d-con{
-  width: 20%;
-}
-.sub_cate_details .sub-a-con{
-  width: 30%;
-}
-.sub_cate_details .sub-img{
-  width: 10%;
-  object-fit: cover;
-}
-.sub_cate_details .sub-img img{
-  object-fit: cover;
-  width: 80%;
-  height: 60px;
-  border-radius: 5px;
-  border: 3px solid var(--border-clr);
-}
-.sub_cate_details .sub-cn{
-  width: 20%;
-  font-size: 16px;
-}
-.sub_cate_details .sub-d{
-  width: 20%;
-  font-size: 16px;
-}
-.sub_cate_details .sub-action-container{
-  display: flex;
-  gap: 10px;
-  width: 30%;
-  font-size: 16px;
-}
-.sub-action-container .edit-box{
-  background-color: var(--btn-bg);
+.duo-winner-selection input {
   height: 40px;
-  padding: 0px 30px;
+  font-size: 16px;
+  padding: 0px 5px;
+  border-radius: 5px;
+  background-color: var(--inputbg);
+  border: 1px solid var(--border-clr);
+}
+.duo-winer-result-section .duo-winner-container .duo-winner-box .duo-team-name {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  color: #fff;
+  padding: 0px 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  align-items: center;
+  background-color: #164776;
+  justify-content: space-between;
+}
+.duo-winer-result-section .duo-winner-container .duo-winner-box {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--second-bg);
+}
+.duo-winer-result-section .duo-winner-container {
+  margin-top: 5px;
+
+}
+.duo-winner-box .duo-pName {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  font-size: 16px;
+  color: #fff;
+  padding: 0px 5px;
+  border-radius: 5px;
+  align-items: center;
+  background-color: var(--inputbg);
+}
+.duo-result-box {
+  width: 100%;
   display: flex;
   align-items: center;
-  border-radius: 5px;
-  cursor: pointer;
-  border: 2px solid var(--border-clr);
 }
-.sub-action-container .delete-box{
+.duo-result-box input {
+  width: 100%;
   height: 40px;
-  padding: 0px 30px;
+  outline: none;
+  color: #fff;
+  padding: 0px 5px;
+  border: 1px solid #aab2b794;
+  background-color: transparent;
+}
+.duo-total-result-con {
+  display: flex;
+  height: 40px;
+  font-size: 16px;
+  color: #fff;
+  align-items: center;
+  border: 1px solid #aab2b794;
+  justify-content: space-between;
+  background-color: var(--deepgreen);
+}
+.duo-kill-total {
+  width: 100%;
+  height: 40px;
   display: flex;
   align-items: center;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: var(--btn2bg);
-  border: 2px solid var(--border-clr);
+  padding: 0px 5px;
+  border-right: 1px solid #aab2b794;
+}
+.duo-kill-MP {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0px 5px;
+  border-right: 1px solid #aab2b794;
+}
+.duo-kill-EP {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0px 5px;
+  border-right: 1px solid #aab2b794;
+}
+.duo-kill-TP {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0px 5px;
 }

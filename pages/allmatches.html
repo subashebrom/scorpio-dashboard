@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- === css link === -->
+    <link rel="stylesheet" href="/css/allmatches.css">
+    <!-- === fontawesome kit link === -->
+    <script src="https://kit.fontawesome.com/aab4d24b6f.js" crossorigin="anonymous"></script>
+    <title>Scorpion-Dashboard</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <img src="/img/brand-logo.png" alt="Scorpion-Gamer">
+                <div class="logo_name">Scorpion</div>
+            </div>
+            <span id="btn"><i class="fa-solid fa-bars"></i></span>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="/index.html">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="/pages/Category.html">
+                    <i class="fa-solid fa-table-list"></i>
+                    <span class="links_name">Category</span>
+                </a>
+                <span class="tooltip">Category</span>
+            </li>
+            <li>
+                <a href="/pages/addmatch.html">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span class="links_name">Add Match</span>
+                </a>
+                <span class="tooltip">Add Match</span>
+            </li>
+            <li>
+                <a href="allmatches.html">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span class="links_name">All Matches</span>
+                </a>
+                <span class="tooltip">All Matches</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                    <span class="links_name">Deposit</span>
+                </a>
+                <span class="tooltip">Deposit</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                    <span class="links_name">Withdraw Request</span>
+                </a>
+                <span class="tooltip">Withdraw Request</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-info"></i>
+                    <span class="links_name">Room Details</span>
+                </a>
+                <span class="tooltip">Room Details</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-users"></i>
+                    <span class="links_name">Users</span>
+                </a>
+                <span class="tooltip">Users</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="links_name">Settings</span>
+                </a>
+                <span class="tooltip">Settings</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-money-bill"></i>
+                    <span class="links_name">Payment Method</span>
+                </a>
+                <span class="tooltip">Payment Method</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-money-bill"></i>
+                    <span class="links_name">Promo Offer</span>
+                </a>
+                <span class="tooltip">Promo Offer</span>
+            </li>
+        </ul>
+        <div class="profile_contnet">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="/img/profile-img.jpg" alt="">
+                    <div class="name_job">
+                        <div class="name">Subas Hebrom</div>
+                        <div class="job">Admin Modarator</div>
+                    </div>
+                </div>
+                <i id="log_out" class="fa-solid fa-arrow-right-from-bracket"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="home_content">
+        <div class="top-item">
+            <h1>Scorpion User Dashboard</h1>
+        </div>
+        <!-- === Middle Items === -->
+        <div class="middle_items-section">
+            <div class="filter-section">
+                <div class="filter-item">
+                    <h2>Search Status</h2>
+                    <input type="search" placeholder="Search by name, category, map">
+                </div>
+                <div class="filter-item">
+                    <h2>Status</h2>
+                    <select name="" id="">
+                        <option value="" disabled selected>Starting</option>
+                        <option value="1">All Status</option>
+                        <option value="2">Starting</option>
+                        <option value="3">Ended</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <h2>Version</h2>
+                    <select name="" id="">
+                        <option value="" disabled selected>Version</option>
+                        <option value="1">Mobile</option>
+                        <option value="2">PC</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <h2>Short By Date</h2>
+                    <select name="" id="">
+                        <option value="" disabled selected>Version</option>
+                        <option value="1">Newest First</option>
+                        <option value="2">Oldest First</option>
+                    </select>
+                </div>
+                <div class="reset-btn">
+                    <p>Reset Filters</p>
+                </div>
+            </div>
+            <!-- === Match Details List === -->
+            <div class="match-dl-section">
+                <h2>Match Details List</h2>
+                <div class="match-dl-con">
+                    <div class="match-dl">
+                        <p class="match-dli">ID</p>
+                        <p class="match-dlmn">Match Name</p>
+                        <p class="match-dlsc">Sub Category</p>
+                        <p class="match-dlmp">Max P</p>
+                        <p class="match-dlm">Map</p>
+                        <p class="match-dlv">Version</p>
+                        <p class="match-dlt">Time</p>
+                        <p class="match-dld">Date</p>
+                        <p class="match-dltp">Total Prize</p>
+                        <p class="match-dls">Status</p>
+                        <p class="match-dla">Action</p>
+                    </div>
+                    <div class="bdr"></div>
+                    <div class="match-dl-btm">
+                        <div class="match-dli">#1</div>
+                        <div class="match-dlmn">BR Solo | Mobile | Regular</div>
+                        <div class="match-dlsc">BR Match</div>
+                        <div class="match-dlmp">48</div>
+                        <div class="match-dlm">Barmuda</div>
+                        <div class="match-dlv">Mobile</div>
+                        <div class="match-dlt">01:00 pm</div>
+                        <div class="match-dld">08-25-2025</div>
+                        <div class="match-dltp">800</div>
+                        <div class="match-dls">
+                            <p class="status-box">Pending</p><!-- Started/ Ended -->
+                        </div>
+                        <div class="match-dla-action-btn">
+                            <a href="/pages/addresult.html" class="resutl-box">Add Result</a>
+                            <p class="delete-box">Refund</p>
+                            <p class="enable-box">Ended</p>
+                        </div>
+                    </div>
+                    <div class="bdr"></div>
+                    <div class="match-dl-btm">
+                        <div class="match-dli">#1</div>
+                        <div class="match-dlmn">BR Solo | Mobile | Regular</div>
+                        <div class="match-dlsc">BR Match</div>
+                        <div class="match-dlmp">48</div>
+                        <div class="match-dlm">Barmuda</div>
+                        <div class="match-dlv">Mobile</div>
+                        <div class="match-dlt">01:00 pm</div>
+                        <div class="match-dld">08-25-2025</div>
+                        <div class="match-dltp">800</div>
+                        <div class="match-dls">
+                            <p class="status-box">Pending</p><!-- Started/ Ended -->
+                        </div>
+                        <div class="match-dla-action-btn">
+                            <a href="/pages/addresult.html" class="resutl-box">Add Result</a>
+                            <p class="delete-box">Refund</p>
+                            <p class="enable-box">Ended</p>
+                        </div>
+                    </div>
+                    <div class="bdr"></div>
+                    <div class="match-dl-btm">
+                        <div class="match-dli">#1</div>
+                        <div class="match-dlmn">BR Solo | Mobile | Regular</div>
+                        <div class="match-dlsc">BR Match</div>
+                        <div class="match-dlmp">48</div>
+                        <div class="match-dlm">Barmuda</div>
+                        <div class="match-dlv">Mobile</div>
+                        <div class="match-dlt">01:00 pm</div>
+                        <div class="match-dld">08-25-2025</div>
+                        <div class="match-dltp">800</div>
+                        <div class="match-dls">
+                            <p class="status-box">Pending</p><!-- Started/ Ended -->
+                        </div>
+                        <div class="match-dla-action-btn">
+                            <a href="/pages/addresult.html" class="resutl-box">Add Result</a>
+                            <p class="delete-box">Refund</p>
+                            <p class="enable-box">Ended</p>
+                            <a href=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- === Page Navigation === -->
+            <div class="page-navigation-section">
+                <div class="pag-nav-left-item">Showing 1 to 10 of 57 matches</div>
+                <div class="pag-nav-right-item">
+                    <div class="page-nav-box">Previous</div>
+                    <div class="page-nav-box-count page-nav-active">1</div>
+                    <div class="page-nav-box-count">2</div>
+                    <div class="page-nav-box-count">3</div>
+                    <div class="page-nav-box-count">4</div>
+                    <div class="page-nav-box">Next</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- === js link === -->
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
