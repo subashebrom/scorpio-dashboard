@@ -353,6 +353,7 @@ match-name-details,
   width: 100%;
 }
 .sfrpname {
+  width: 100%;
   height: 40px;
   display: flex;
   color: #fff;
@@ -362,9 +363,8 @@ match-name-details,
   justify-content: space-between;
   background-color: var(--inputbg);
 }
-.player-profile {
-  cursor: pointer;
-  font-size: 30px;
+.sfrpname p{
+  width: 100%;
 }
 .single-result-con {
   width: 100%;
@@ -380,9 +380,61 @@ match-name-details,
   background-color: transparent;
 }
 
+
+/* ==== User Porile Details Section === */
+.user_profile{
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 10px;
+}
+.user_profile i{
+  cursor: pointer;
+  font-size: 30px;
+}
+.user_profile_details{
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 28px;
+  width: 400px;
+  padding: 10px;
+  color: #fff;
+  line-height: 30px;
+  font-size: 14px;
+  border-radius: 5px;
+  z-index: 800;
+  background-color: #1A1E22;
+}
+.banned_btn{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+.banned_btn p{
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--btn2bg);
+  transition: all 0.3s ease-in-out;
+}
+.banned_btn p:hover{
+  background-color: #AF3B3B;
+}
 /* === Duo Winner Result === */
 .duo-winer-result-section {
   margin: 20px 20px;
+}
+.duo-win-box{
+  display: grid;
+  column-gap: 20px;
+  row-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
 }
 .duo-winer-result-section h2 {
   font-size: 20px;
@@ -407,7 +459,11 @@ match-name-details,
   background-color: var(--inputbg);
   border: 1px solid var(--border-clr);
 }
-.duo-winer-result-section .duo-winner-container .duo-winner-box .duo-team-name {
+.duo-winner-selection input:focus{
+  outline: 1px solid #1594fb;
+  border: none;
+}
+.duo-team-name {
   width: 100%;
   height: 40px;
   display: flex;
@@ -420,13 +476,21 @@ match-name-details,
   justify-content: space-between;
 }
 .duo-winer-result-section .duo-winner-container .duo-winner-box {
+  /* padding: 10px;
+  border-radius: 5px;
+  background-color: var(--second-bg); */
+}
+.duo-winer-result-section .duo-winner-container {
+  min-height: 260px;
+  max-height: 520px;
+  overflow-y: scroll;
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 5px;
   padding: 10px;
   border-radius: 5px;
   background-color: var(--second-bg);
-}
-.duo-winer-result-section .duo-winner-container {
-  margin-top: 5px;
-
 }
 .duo-winner-box .duo-pName {
   width: 100%;
@@ -441,8 +505,7 @@ match-name-details,
 }
 .duo-result-box {
   width: 100%;
-  display: flex;
-  align-items: center;
+
 }
 .duo-result-box input {
   width: 100%;
@@ -493,4 +556,35 @@ match-name-details,
   display: flex;
   align-items: center;
   padding: 0px 5px;
+}
+
+
+/* === Duo Full Result Section === */
+.duo-full-result-sec{
+  margin: 20px 20px;
+}
+.duo-full-result-sec h2{
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+.add-frfdetails{
+  height: 50px;
+  width: 100%;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 20px;
+  border-bottom: 1px solid var(--border-clr);
+}
+.add-frfdetails p{
+  font-size: 16px;
+  color: #fff;
+}
+.duoIdNo{
+  width: 30%;
+}
+.duoNameDetails{
+  width: 100%;
 }

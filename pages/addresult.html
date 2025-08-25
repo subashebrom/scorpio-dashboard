@@ -1,511 +1,1575 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <!-- === css link === -->
     <link rel="stylesheet" href="/css//addresult.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- === fontawesome kit link === -->
-    <script src="https://kit.fontawesome.com/aab4d24b6f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/aab4d24b6f.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Scorpion-Dashboard</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="sidebar">
-        <div class="logo_content">
-            <div class="logo">
-                <img src="/img/brand-logo.png" alt="Scorpion-Gamer" />
-                <div class="logo_name">Scorpion</div>
-            </div>
-            <span id="btn"><i class="fa-solid fa-bars"></i></span>
+      <div class="logo_content">
+        <div class="logo">
+          <img src="/img/brand-logo.png" alt="Scorpion-Gamer" />
+          <div class="logo_name">Scorpion</div>
         </div>
-        <ul class="nav_list">
-            <li>
-                <a href="/index.html">
-                    <i class="fa-solid fa-border-all"></i>
-                    <span class="links_name">Dashboard</span>
-                </a>
-                <span class="tooltip">Dashboard</span>
-            </li>
-            <li>
-                <a href="Category.html">
-                    <i class="fa-solid fa-table-list"></i>
-                    <span class="links_name">Category</span>
-                </a>
-                <span class="tooltip">Category</span>
-            </li>
-            <li>
-                <a href="/pages//addmatch.html">
-                    <i class="fa-solid fa-gamepad"></i>
-                    <span class="links_name">Add Match</span>
-                </a>
-                <span class="tooltip">Add Match</span>
-            </li>
-            <li>
-                <a href="/pages/allmatches.html">
-                    <i class="fa-solid fa-gamepad"></i>
-                    <span class="links_name">All Matches</span>
-                </a>
-                <span class="tooltip">All Matches</span>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fa-solid fa-money-bill-transfer"></i>
-                    <span class="links_name">Deposit</span>
-                </a>
-                <span class="tooltip">Deposit</span>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fa-solid fa-money-bill-transfer"></i>
-                    <span class="links_name">Withdraw Request</span>
-                </a>
-                <span class="tooltip">Withdraw Request</span>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fa-solid fa-info"></i>
-                    <span class="links_name">Room Details</span>
-                </a>
-                <span class="tooltip">Room Details</span>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fa-solid fa-users"></i>
-                    <span class="links_name">Users</span>
-                </a>
-                <span class="tooltip">Users</span>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fa-solid fa-gear"></i>
-                    <span class="links_name">Settings</span>
-                </a>
-                <span class="tooltip">Settings</span>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fa-solid fa-money-bill"></i>
-                    <span class="links_name">Payment Method</span>
-                </a>
-                <span class="tooltip">Payment Method</span>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fa-solid fa-money-bill"></i>
-                    <span class="links_name">Promo Offer</span>
-                </a>
-                <span class="tooltip">Promo Offer</span>
-            </li>
-        </ul>
-        <div class="profile_contnet">
-            <div class="profile">
-                <div class="profile_details">
-                    <img src="/img/profile-img.jpg" alt="" />
-                    <div class="name_job">
-                        <div class="name">Subas Hebrom</div>
-                        <div class="job">Admin Modarator</div>
-                    </div>
-                </div>
-                <i id="log_out" class="fa-solid fa-arrow-right-from-bracket"></i>
+        <span id="btn"><i class="fa-solid fa-bars"></i></span>
+      </div>
+      <ul class="nav_list">
+        <li>
+          <a href="/index.html">
+            <i class="fa-solid fa-border-all"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+          <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+          <a href="Category.html">
+            <i class="fa-solid fa-table-list"></i>
+            <span class="links_name">Category</span>
+          </a>
+          <span class="tooltip">Category</span>
+        </li>
+        <li>
+          <a href="/pages//addmatch.html">
+            <i class="fa-solid fa-gamepad"></i>
+            <span class="links_name">Add Match</span>
+          </a>
+          <span class="tooltip">Add Match</span>
+        </li>
+        <li>
+          <a href="/pages/allmatches.html">
+            <i class="fa-solid fa-gamepad"></i>
+            <span class="links_name">All Matches</span>
+          </a>
+          <span class="tooltip">All Matches</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-money-bill-transfer"></i>
+            <span class="links_name">Deposit</span>
+          </a>
+          <span class="tooltip">Deposit</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-money-bill-transfer"></i>
+            <span class="links_name">Withdraw Request</span>
+          </a>
+          <span class="tooltip">Withdraw Request</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-info"></i>
+            <span class="links_name">Room Details</span>
+          </a>
+          <span class="tooltip">Room Details</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-users"></i>
+            <span class="links_name">Users</span>
+          </a>
+          <span class="tooltip">Users</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-gear"></i>
+            <span class="links_name">Settings</span>
+          </a>
+          <span class="tooltip">Settings</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-money-bill"></i>
+            <span class="links_name">Payment Method</span>
+          </a>
+          <span class="tooltip">Payment Method</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-money-bill"></i>
+            <span class="links_name">Promo Offer</span>
+          </a>
+          <span class="tooltip">Promo Offer</span>
+        </li>
+      </ul>
+      <div class="profile_contnet">
+        <div class="profile">
+          <div class="profile_details">
+            <img src="/img/profile-img.jpg" alt="" />
+            <div class="name_job">
+              <div class="name">Subas Hebrom</div>
+              <div class="job">Admin Modarator</div>
             </div>
+          </div>
+          <i id="log_out" class="fa-solid fa-arrow-right-from-bracket"></i>
         </div>
+      </div>
     </div>
     <!-- === Category Content === -->
     <div class="category_content">
-        <div class="top-item">
-            <h1>Scorpion User Dashboard</h1>
+      <div class="top-item">
+        <h1>Scorpion User Dashboard</h1>
+      </div>
+      <!-- === Solo Winner Section === -->
+      <div class="winner-section">
+        <h2>Add Result(#1130)</h2>
+        <div class="winner-container">
+          <div class="winner-box">
+            <label for="">Select Winner <span>(300)</span></label>
+            <input
+              class="winner-select-box"
+              type="text"
+              placeholder="Select Winner"
+            />
+            <div class="solo-player-con">
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="winner-box">
+            <label for="">2nd Winner <span>(300)</span></label>
+            <input
+              class="winner-select-box"
+              type="text"
+              placeholder="2nd Winner"
+            />
+            <div class="solo-player-con">
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="winner-box">
+            <label for="">3trd Winner <span>(300)</span></label>
+            <input
+              class="winner-select-box"
+              type="text"
+              placeholder="3rd Winner"
+            />
+            <div class="solo-player-con">
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="winner-box">
+            <label for="">4th Winner <span>(300)</span></label>
+            <input
+              class="winner-select-box"
+              type="text"
+              placeholder="4th Winner"
+            />
+            <div class="solo-player-con">
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="winner-box">
+            <label for="">5th Winner <span>(300)</span></label>
+            <input
+              class="winner-select-box"
+              type="text"
+              placeholder="5th Winner"
+            />
+            <div class="solo-player-con">
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="winner-box">
+            <label for="">6th Winner <span>(300)</span></label>
+            <input
+              class="winner-select-box"
+              type="text"
+              placeholder="6th Winner"
+            />
+            <div class="solo-player-con">
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+              <div class="solo-pn">
+                <p>Subas Hebrom</p>
+              </div>
+              <div class="solo-pn-result">
+                <input type="number" value="" placeholder="Kill" required />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Match Point"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Extra Prize"
+                  required
+                />
+                <input
+                  type="number"
+                  value=""
+                  placeholder="Total Prize"
+                  required
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- === Solo Winner Section === -->
-        <div class="winner-section">
-            <h2>Add Result(#1130)</h2>
-            <div class="winner-container">
-                <div class="winner-box">
-                    <label for="">Select Winner <span>(300)</span></label>
-                    <input class="winner-select-box" type="text" placeholder="Select Winner">
-                    <div class="solo-player-con">
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                    </div>
-                </div>
-                <div class="winner-box">
-                    <label for="">2nd Winner <span>(300)</span></label>
-                    <input class="winner-select-box" type="text" placeholder="2nd Winner">
-                    <div class="solo-player-con">
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                    </div>
-                </div>
-                <div class="winner-box">
-                    <label for="">3trd Winner <span>(300)</span></label>
-                    <input class="winner-select-box" type="text" placeholder="3rd Winner">
-                    <div class="solo-player-con">
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                    </div>
-                </div>
-                <div class="winner-box">
-                    <label for="">4th Winner <span>(300)</span></label>
-                    <input class="winner-select-box" type="text" placeholder="4th Winner">
-                    <div class="solo-player-con">
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                    </div>
-                </div>
-                <div class="winner-box">
-                    <label for="">5th Winner <span>(300)</span></label>
-                    <input class="winner-select-box" type="text" placeholder="5th Winner">
-                    <div class="solo-player-con">
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                    </div>
-                </div>
-                <div class="winner-box">
-                    <label for="">6th Winner <span>(300)</span></label>
-                    <input class="winner-select-box" type="text" placeholder="6th Winner">
-                    <div class="solo-player-con">
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                        <div class="solo-pn">
-                            <p>Subas Hebrom</p>
-                        </div>
-                        <div class="solo-pn-result">
-                            <input type="number" value="" placeholder="Kill" required>
-                            <input type="number" value="" placeholder="Match Point" required>
-                            <input type="number" value="" placeholder="Extra Prize" required>
-                            <input type="number" value="" placeholder="Total Prize" required>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <!-- === Solo Full Results === -->
+      <div class="solo-full-result-sec">
+        <div class="match-name">
+          <h2>Add Full Result <span>(#1130)</span></h2>
         </div>
-        <!-- === Solo Full Results === -->
-        <div class="solo-full-result-sec">
-            <div class="match-name">
-                <h2>Add Full Result <span>(#1130)</span></h2>
-            </div>
-            <div class="match-name-details">
-                <div class="id">#</div>
-                <div class="kill">Kill</div>
-                <div class="mp">M.P</div>
-                <div class="ep">Extra Prize</div>
-                <div class="tp">Total Prize</div>
-            </div>
-            <div class="solo-full-res-con">
-                <div class="idNo">
-                    #1130
-                </div>
-                <div class="result-box">
-                    <div class="sfrpname">
-                        <p>Subas hebrom</p>
-                        <span class="player-profile"><i class="fa-solid fa-ellipsis"></i></span>
-                    </div>
-                    <div class="single-result-con">
-                        <input type="number" placeholder="Kill" required>
-                        <input type="number" placeholder="Match Point" required>
-                        <input type="number" placeholder="Extra Prize" required>
-                        <input type="number" placeholder="Total Prize" required>
-                    </div>
-                </div>
-            </div>
+        <div class="match-name-details">
+          <div class="id">#</div>
+          <div class="kill">Kill</div>
+          <div class="mp">M.P</div>
+          <div class="ep">Extra Prize</div>
+          <div class="tp">Total Prize</div>
         </div>
+        <div class="solo-full-res-con">
+          <div class="idNo">#1130</div>
+          <div class="result-box">
+            <div class="sfrpname">
+              <p>Subas hebrom</p>
+              <div class="user_profile">
+                <i class="fa-solid fa-ellipsis"></i>
+                <div class="user_profile_details">
+                  <p>User Name: <span>Subas Hebrom</span></p>
+                  <p>User ID: <span>#1130</span></p>
+                  <p>User Mail: <span>subashebrom@gmail.com</span></p>
+                  <p>User Pass: <span>subas1130@</span></p>
+                  <div class="banned_btn">
+                    <p>3day's Banned</p>
+                    <p>Permanent Banned</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <div class="single-result-con">
+              <input type="number" placeholder="Kill" required />
+              <input type="number" placeholder="Match Point" required />
+              <input type="number" placeholder="Extra Prize" required />
+              <input type="number" placeholder="Total Prize" required />
+            </div>
+          </div>
+        </div>
+        <div class="solo-full-res-con">
+          <div class="idNo">#1130</div>
+          <div class="result-box">
+            <div class="sfrpname">
+              <p>Subas hebrom</p>
+              <div class="user_profile">
+                <i class="fa-solid fa-ellipsis"></i>
+                <div class="user_profile_details">
+                  <p>User Name: <span>Subas Hebrom</span></p>
+                  <p>User ID: <span>#1130</span></p>
+                  <p>User Mail: <span>subashebrom@gmail.com</span></p>
+                  <p>User Pass: <span>subas1130@</span></p>
+                  <div class="banned_btn">
+                    <p>3day's Banned</p>
+                    <p>Permanent Banned</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <!-- === Duo Winner Result === -->
-        <div class="duo-winer-result-section">
-            <h2>Add Result <span>(#1130)</span></h2>
-            <di class="duo-winner-selection">
-                <label for="">Select Winner <span>(500)</span></label>
-                <input type="text" placeholder="Select Winner">
-            </di>
+            <div class="single-result-con">
+              <input type="number" placeholder="Kill" required />
+              <input type="number" placeholder="Match Point" required />
+              <input type="number" placeholder="Extra Prize" required />
+              <input type="number" placeholder="Total Prize" required />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- === Duo Winner Result === -->
+      <div class="duo-winer-result-section">
+        <h2>Add Result <span>(#1130)</span></h2>
+        <div class="duo-win-box">
+          <div class="duo-win-container">
+            <div class="duo-winner-selection">
+              <label for="">Select Winner <span>(500)</span></label>
+              <input type="text" placeholder="Select Winner" />
+            </div>
             <div class="duo-winner-container">
-                <div class="duo-winner-box">
-                    <div class="duo-team-name">
-                        <p>Team 01</p>
-                        <p>Scorpion Brother's Gamer</p>
-                    </div>
-                    <div class="duo-pName">
-                        Subas Hebrom
-                    </div>
-                    <div class="duo-result-box">
-                        <input type="number" placeholder="Kill" required>
-                        <input type="number" placeholder="M.P" required>
-                        <input type="number" placeholder="Extra Prize" required>
-                        <input type="number" placeholder="Total Prize" required>
-                    </div>
-                    <div class="duo-pName">
-                        Subas Hebrom
-                    </div>
-                    <div class="duo-result-box">
-                        <input type="number" placeholder="Kill" required>
-                        <input type="number" placeholder="M.P" required>
-                        <input type="number" placeholder="Extra Prize" required>
-                        <input type="number" placeholder="Total Prize" required>
-                    </div>
-                    <div class="duo-total-result-con">
-                        <div class="duo-kill-total"><p>Kill : </p></div>
-                        <div class="duo-kill-MP"><p>Match Point : </p></div>
-                        <div class="duo-kill-EP"><p>Extra Prize : </p></div>
-                        <div class="duo-kill-TP"><p>Total Prize : </p></div>
-                    </div>
+              <div class="duo-winner-box">
+                <div class="duo-team-name">
+                  <p>Team 01</p>
+                  <p>Scorpion Brother's Gamer</p>
                 </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-total-result-con">
+                  <div class="duo-kill-total"><p>Kill :</p></div>
+                  <div class="duo-kill-MP"><p>Match Point :</p></div>
+                  <div class="duo-kill-EP"><p>Extra Prize :</p></div>
+                  <div class="duo-kill-TP"><p>Total Prize :</p></div>
+                </div>
+              </div>
+              <div class="duo-winner-box">
+                <div class="duo-team-name">
+                  <p>Team 01</p>
+                  <p>Scorpion Brother's Gamer</p>
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-total-result-con">
+                  <div class="duo-kill-total"><p>Kill :</p></div>
+                  <div class="duo-kill-MP"><p>Match Point :</p></div>
+                  <div class="duo-kill-EP"><p>Extra Prize :</p></div>
+                  <div class="duo-kill-TP"><p>Total Prize :</p></div>
+                </div>
+              </div>
+              <div class="duo-winner-box">
+                <div class="duo-team-name">
+                  <p>Team 01</p>
+                  <p>Scorpion Brother's Gamer</p>
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-total-result-con">
+                  <div class="duo-kill-total"><p>Kill :</p></div>
+                  <div class="duo-kill-MP"><p>Match Point :</p></div>
+                  <div class="duo-kill-EP"><p>Extra Prize :</p></div>
+                  <div class="duo-kill-TP"><p>Total Prize :</p></div>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="duo-win-container">
+            <div class="duo-winner-selection">
+              <label for="">2nd Winner <span>(600)</span></label>
+              <input type="text" placeholder="2nd Winner" />
+            </div>
+            <div class="duo-winner-container">
+              <div class="duo-winner-box">
+                <div class="duo-team-name">
+                  <p>Team 02</p>
+                  <p>Scorpion Brother's Gamer</p>
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-total-result-con">
+                  <div class="duo-kill-total"><p>Kill :</p></div>
+                  <div class="duo-kill-MP"><p>Match Point :</p></div>
+                  <div class="duo-kill-EP"><p>Extra Prize :</p></div>
+                  <div class="duo-kill-TP"><p>Total Prize :</p></div>
+                </div>
+              </div>
+              <div class="duo-winner-box">
+                <div class="duo-team-name">
+                  <p>Team 01</p>
+                  <p>Scorpion Brother's Gamer</p>
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-total-result-con">
+                  <div class="duo-kill-total"><p>Kill :</p></div>
+                  <div class="duo-kill-MP"><p>Match Point :</p></div>
+                  <div class="duo-kill-EP"><p>Extra Prize :</p></div>
+                  <div class="duo-kill-TP"><p>Total Prize :</p></div>
+                </div>
+              </div>
+              <div class="duo-winner-box">
+                <div class="duo-team-name">
+                  <p>Team 01</p>
+                  <p>Scorpion Brother's Gamer</p>
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-total-result-con">
+                  <div class="duo-kill-total"><p>Kill :</p></div>
+                  <div class="duo-kill-MP"><p>Match Point :</p></div>
+                  <div class="duo-kill-EP"><p>Extra Prize :</p></div>
+                  <div class="duo-kill-TP"><p>Total Prize :</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="duo-win-container">
+            <div class="duo-winner-selection">
+              <label for="">3rd Winner <span>(700)</span></label>
+              <input type="text" placeholder="3rd Winner" />
+            </div>
+            <div class="duo-winner-container">
+              <div class="duo-winner-box">
+                <div class="duo-team-name">
+                  <p>Team 03</p>
+                  <p>Scorpion Brother's Gamer</p>
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-total-result-con">
+                  <div class="duo-kill-total"><p>Kill :</p></div>
+                  <div class="duo-kill-MP"><p>Match Point :</p></div>
+                  <div class="duo-kill-EP"><p>Extra Prize :</p></div>
+                  <div class="duo-kill-TP"><p>Total Prize :</p></div>
+                </div>
+              </div>
+              <div class="duo-winner-box">
+                <div class="duo-team-name">
+                  <p>Team 01</p>
+                  <p>Scorpion Brother's Gamer</p>
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-total-result-con">
+                  <div class="duo-kill-total"><p>Kill :</p></div>
+                  <div class="duo-kill-MP"><p>Match Point :</p></div>
+                  <div class="duo-kill-EP"><p>Extra Prize :</p></div>
+                  <div class="duo-kill-TP"><p>Total Prize :</p></div>
+                </div>
+              </div>
+              <div class="duo-winner-box">
+                <div class="duo-team-name">
+                  <p>Team 01</p>
+                  <p>Scorpion Brother's Gamer</p>
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-total-result-con">
+                  <div class="duo-kill-total"><p>Kill :</p></div>
+                  <div class="duo-kill-MP"><p>Match Point :</p></div>
+                  <div class="duo-kill-EP"><p>Extra Prize :</p></div>
+                  <div class="duo-kill-TP"><p>Total Prize :</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="duo-win-container">
+            <div class="duo-winner-selection">
+              <label for="">4th Winner <span>(800)</span></label>
+              <input type="text" placeholder="4th Winner" />
+            </div>
+            <div class="duo-winner-container">
+              <div class="duo-winner-box">
+                <div class="duo-team-name">
+                  <p>Team 04</p>
+                  <p>Scorpion Brother's Gamer</p>
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-total-result-con">
+                  <div class="duo-kill-total"><p>Kill :</p></div>
+                  <div class="duo-kill-MP"><p>Match Point :</p></div>
+                  <div class="duo-kill-EP"><p>Extra Prize :</p></div>
+                  <div class="duo-kill-TP"><p>Total Prize :</p></div>
+                </div>
+              </div>
+              <div class="duo-winner-box">
+                <div class="duo-team-name">
+                  <p>Team 01</p>
+                  <p>Scorpion Brother's Gamer</p>
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-total-result-con">
+                  <div class="duo-kill-total"><p>Kill :</p></div>
+                  <div class="duo-kill-MP"><p>Match Point :</p></div>
+                  <div class="duo-kill-EP"><p>Extra Prize :</p></div>
+                  <div class="duo-kill-TP"><p>Total Prize :</p></div>
+                </div>
+              </div>
+              <div class="duo-winner-box">
+                <div class="duo-team-name">
+                  <p>Team 01</p>
+                  <p>Scorpion Brother's Gamer</p>
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-total-result-con">
+                  <div class="duo-kill-total"><p>Kill :</p></div>
+                  <div class="duo-kill-MP"><p>Match Point :</p></div>
+                  <div class="duo-kill-EP"><p>Extra Prize :</p></div>
+                  <div class="duo-kill-TP"><p>Total Prize :</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="duo-win-container">
+            <div class="duo-winner-selection">
+              <label for="">5th Winner <span>(900)</span></label>
+              <input type="text" placeholder="5th Winner" />
+            </div>
+            <div class="duo-winner-container">
+              <div class="duo-winner-box">
+                <div class="duo-team-name">
+                  <p>Team 05</p>
+                  <p>Scorpion Brother's Gamer</p>
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-total-result-con">
+                  <div class="duo-kill-total"><p>Kill :</p></div>
+                  <div class="duo-kill-MP"><p>Match Point :</p></div>
+                  <div class="duo-kill-EP"><p>Extra Prize :</p></div>
+                  <div class="duo-kill-TP"><p>Total Prize :</p></div>
+                </div>
+              </div>
+              <div class="duo-winner-box">
+                <div class="duo-team-name">
+                  <p>Team 01</p>
+                  <p>Scorpion Brother's Gamer</p>
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-total-result-con">
+                  <div class="duo-kill-total"><p>Kill :</p></div>
+                  <div class="duo-kill-MP"><p>Match Point :</p></div>
+                  <div class="duo-kill-EP"><p>Extra Prize :</p></div>
+                  <div class="duo-kill-TP"><p>Total Prize :</p></div>
+                </div>
+              </div>
+              <div class="duo-winner-box">
+                <div class="duo-team-name">
+                  <p>Team 01</p>
+                  <p>Scorpion Brother's Gamer</p>
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-total-result-con">
+                  <div class="duo-kill-total"><p>Kill :</p></div>
+                  <div class="duo-kill-MP"><p>Match Point :</p></div>
+                  <div class="duo-kill-EP"><p>Extra Prize :</p></div>
+                  <div class="duo-kill-TP"><p>Total Prize :</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="duo-win-container">
+            <div class="duo-winner-selection">
+              <label for="">6th Winner <span>(1000)</span></label>
+              <input type="text" placeholder="6th Winner" />
+            </div>
+            <div class="duo-winner-container">
+              <div class="duo-winner-box">
+                <div class="duo-team-name">
+                  <p>Team 06</p>
+                  <p>Scorpion Brother's Gamer</p>
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-total-result-con">
+                  <div class="duo-kill-total"><p>Kill :</p></div>
+                  <div class="duo-kill-MP"><p>Match Point :</p></div>
+                  <div class="duo-kill-EP"><p>Extra Prize :</p></div>
+                  <div class="duo-kill-TP"><p>Total Prize :</p></div>
+                </div>
+              </div>
+              <div class="duo-winner-box">
+                <div class="duo-team-name">
+                  <p>Team 01</p>
+                  <p>Scorpion Brother's Gamer</p>
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-total-result-con">
+                  <div class="duo-kill-total"><p>Kill :</p></div>
+                  <div class="duo-kill-MP"><p>Match Point :</p></div>
+                  <div class="duo-kill-EP"><p>Extra Prize :</p></div>
+                  <div class="duo-kill-TP"><p>Total Prize :</p></div>
+                </div>
+              </div>
+              <div class="duo-winner-box">
+                <div class="duo-team-name">
+                  <p>Team 01</p>
+                  <p>Scorpion Brother's Gamer</p>
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-pName">Subas Hebrom</div>
+                <div class="duo-result-box">
+                  <input type="number" placeholder="Kill" required />
+                  <input type="number" placeholder="M.P" required />
+                  <input type="number" placeholder="Extra Prize" required />
+                  <input type="number" placeholder="Total Prize" required />
+                </div>
+                <div class="duo-total-result-con">
+                  <div class="duo-kill-total"><p>Kill :</p></div>
+                  <div class="duo-kill-MP"><p>Match Point :</p></div>
+                  <div class="duo-kill-EP"><p>Extra Prize :</p></div>
+                  <div class="duo-kill-TP"><p>Total Prize :</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <!-- === Duo Full Result Section === -->
+      <div class="duo-full-result-sec">
+        <h2>Add Full Result <span>(#1130)</span></h2>
+        <div class="add-frfdetails">
+          <p class="duoIdNo">#</p>
+          <p class="duoNameDetails">Kill</p>
+          <p class="duoNameDetails">M.P</p>
+          <p class="duoNameDetails">Extra Prize</p>
+          <p class="duoNameDetails">Total Prize</p>
+        </div>
+        <div class="solo-full-res-con">
+          <div class="idNo">#1130</div>
+          <div class="result-box">
+            <div class="duo-team-name">
+                  <p>Team 06</p>
+                  <p>Scorpion Brother's Gamer</p>
+                </div>
+            <div class="sfrpname">
+              <p>Subas hebrom</p>
+              <div class="user_profile">
+                <i class="fa-solid fa-ellipsis"></i>
+                <div class="user_profile_details">
+                  <p>User Name: <span>Subas Hebrom</span></p>
+                  <p>User ID: <span>#1130</span></p>
+                  <p>User Mail: <span>subashebrom@gmail.com</span></p>
+                  <p>User Pass: <span>subas1130@</span></p>
+                  <div class="banned_btn">
+                    <p>3day's Banned</p>
+                    <p>Permanent Banned</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-result-con">
+              <input type="number" placeholder="Kill" required />
+              <input type="number" placeholder="Match Point" required />
+              <input type="number" placeholder="Extra Prize" required />
+              <input type="number" placeholder="Total Prize" required />
+            </div>
+            <div class="sfrpname">
+              <p>Subas hebrom</p>
+              <div class="user_profile">
+                <i class="fa-solid fa-ellipsis"></i>
+                <div class="user_profile_details">
+                  <p>User Name: <span>Subas Hebrom</span></p>
+                  <p>User ID: <span>#1130</span></p>
+                  <p>User Mail: <span>subashebrom@gmail.com</span></p>
+                  <p>User Pass: <span>subas1130@</span></p>
+                  <div class="banned_btn">
+                    <p>3day's Banned</p>
+                    <p>Permanent Banned</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-result-con">
+              <input type="number" placeholder="Kill" required />
+              <input type="number" placeholder="Match Point" required />
+              <input type="number" placeholder="Extra Prize" required />
+              <input type="number" placeholder="Total Prize" required />
+            </div>
+            <div class="duo-total-result-con">
+              <div class="duo-kill-total"><p>Kill :</p></div>
+              <div class="duo-kill-MP"><p>Match Point :</p></div>
+              <div class="duo-kill-EP"><p>Extra Prize :</p></div>
+              <div class="duo-kill-TP"><p>Total Prize :</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
 
     <!-- === js link === -->
     <script src="/js/addresult.js"></script>
-</body>
-
+  </body>
 </html>
